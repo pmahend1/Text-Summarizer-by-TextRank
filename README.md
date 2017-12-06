@@ -139,7 +139,8 @@ pip install networkx
 
 #### Download Stopwords from nltk data source
 
-```python
+```
+ python
  #Pythonic way
  import nltk
  nltk.download('punkt')
@@ -216,7 +217,8 @@ When flatMap or map operation is called with get_summary() method on sentencesTo
 * Tokenizer list not present in worker nodes
     - Publish the tokenizer list to nodes. Save english.pickle file in same directory from where spark program is run [reference](#https://stackoverflow.com/questions/46878186/pickling-error-with-spark-submit-pickle-picklingerror-args0-from-newobj?noredirect=1&lq=1#46879838)  
 
-```sent_detector = nltk.data.load('english' + '.pickle')  # DSBA cluster
+```
+    sent_detector = nltk.data.load('english' + '.pickle')  # DSBA cluster
     print("sent_detector", str(sent_detector))
     sc.broadcast(sent_detector)
 ```
