@@ -201,7 +201,7 @@ When flatMap or map operation is called with get_summary() method on sentencesTo
 * Could be an error with PySpark source code **/lib/pyspark.zip/pyspark/cloudpickle.py**  
     - Looked if there are updates for cloudpickle.py recently. There is an update recently. So tried replacing cloudpickle.py in local with latest code ; but that yielded incompatibility issues due to Python3 and Python2. So we should see by installing latest stable version of Spark.
 
-*Result* - using latest version of cloudpickle.py did not work. Have to check installing latest version of Spark
+*Result* - using latest version of cloudpickle.py did not work. Checked with latest Spark 2.2.1(release December 1, 2017) but did not fix the issue.
 
 * Worker nodes dont have NLTK-Punkt, networkx libraries installed or dont have access to it. Or may be DSBA cluster does not have installation of these  in cluster nodes or master.
 
